@@ -4,6 +4,7 @@
   "name": "KVRX Livestream",
   "description": "Listen to KVRX with the click of a button!",
   "version": "1.0",
+  "permissions": ["http://kvrx.org/"],
 
   "browser_action": {
    "default_icon": "icon.png",

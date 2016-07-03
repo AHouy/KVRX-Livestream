@@ -1,18 +1,14 @@
 function updateTags() {
-	var kvrxSongTag = 'test';
-	var content = ("http://kvrx.org").html();
-	console.log(content);
-
-
+	$("#song").load("http:/kvrx.org #track-name");
+	$("#artist").load("http:/kvrx.org #artist-name");
+	$("#album").load("http:/kvrx.org #album-name");
+	$("#albumart").load("http:/kvrx.org #album-artwork");
 }
 
 document.addEventListener('DOMContentLoaded', function() {
 
-	var songTag = document.getElementById('song'),
-		artistTag = document.getElementById('artist'),
-		albumTag = document.getElementById('album');
-
-	setInterval(updateTags, 1000)
+	updateTags()
+	//setInterval(updateTags, 1000)
 
 
     var playButton = document.getElementById('livestreamlisten'),
