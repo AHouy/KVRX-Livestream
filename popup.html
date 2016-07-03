@@ -2,34 +2,55 @@
 <html>
 	<head>
 		<title>KVRX Livestream</title>
+	 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 	</head>
 	<body style="width: 400px;">
 		<!--Main block-->
 		<div>
+
 			<!--Title section-->
 			<hr />
-			<h4>KVRX Livestream</h4>
+			<table>
+				<tr>
+					<td style="width: 30%;">
+						<img src="icon.png" height="20%">
+					</td>
+					<td>
+						<h4 class="title">KVRX Livestream</h4>
+					</td>
+				</tr>
+			</table>
 			<hr />
+
 			<!--Now playing block-->
-			<h5>NOW PLAYING</h5>
-			<p>
-				<!--Each item displayed to user has it's own span for updating-->
-				<span id='song'></span><br />
-				<span id='artist'></span><br />
-				<i><span id='album'></span></i><br /><br />
-				<span id='albumart'></span>
-			</p>
+			<h5 class="title">NOW PLAYING</h5>
+			<table>
+				<tr>
+					<td>
+						<span id='song'></span><br />
+						<span id='artist'></span><br />
+						<i><span id='album'></span></i><br />
+					</td>
+					<td style="text-align: right;">
+						<span id='albumart'></span>
+					</td>
+				</tr>
+			</table>
 			<br />
+
 			<!--Buttons for starting/stopping livestream-->
-			<button type=button id="livestreamlisten" class="btn" style="color: white; margin-right: 20px;">Listen Now</button>
-			<button type=button id="livestreamstop" class="btn" style="color: white;">Stop Stream</button>
+
+			<button type=button id="livestreamlisten" class="btn" style="color: white; margin-left: 50px">Listen Now</button>
+			<button type=button id="livestreamstop" class="btn" style="color: white; float: right; margin-right: 70px;">Stop Stream</button>
+			
 		</div>
 		<hr />
 		<!--Footer block-->
-		<div>
+		<div id="footerBlock">
 			<!--Personal website, GitHub repo, and KVRX website-->
 			<p>Developed by <a href="http://ianmobbs.com/" target="_blank">Ian Mobbs</a></p>
 			<p>Source code can be found on <a href="https://github.com/ianmobbs/KVRX-Livestream" target="_blank">Github</a>.</p>

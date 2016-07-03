@@ -15,9 +15,9 @@ function updateTags() {
 
 //Runs scripts once main page is loaded
 document.addEventListener('DOMContentLoaded', function() {
-	//Update tags and proceed to do it every five seconds
+	//Update tags and proceed to do it every ten seconds
 	updateTags()
-	setInterval(updateTags, 5000)
+	//setInterval(updateTags, 10000)
 
 	//Create variables for play and pause buttons
     var playButton = document.getElementById('livestreamlisten'),
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
    	//If play button is pressed, send to background.js via message
     playButton.addEventListener('click', function() {
-    	//console.log("play button pressed");
+    	console.log("play button pressed");
     	chrome.extension.sendMessage({action: "play"})
     });
     

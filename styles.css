@@ -1,7 +1,24 @@
 body {
-	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: 'Roboto Slab', serif;
+	background-color: #3c3c3c;
+	color: #E7EE22;
 	margin-left: 20px;
 }
+
+table {
+	margin-right: 20px;
+}
+
+.title {
+	color: #E7EE22;
+}
+
 #footerBlock {
 	font-size: 10px;
+}
+#album-name {
+	color: yellow;
+	pointer-events: none;
+	cursor: default;
 }
