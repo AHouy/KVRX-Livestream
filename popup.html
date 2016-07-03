@@ -1,51 +1,42 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Livestream Listener</title>
+		<title>KVRX Livestream</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	</head>
 	<body style="width: 400px;">
-		<div id="titleBlock">
+		<!--Main block-->
+		<div>
+			<!--Title section-->
+			<hr />
 			<h4>KVRX Livestream</h4>
 			<hr />
-			<h6>NOW PLAYING</h6>
+			<!--Now playing block-->
+			<h5>NOW PLAYING</h5>
 			<p>
+				<!--Each item displayed to user has it's own span for updating-->
 				<span id='song'></span><br />
 				<span id='artist'></span><br />
-				<i><span id='album'></span></i><br />
+				<i><span id='album'></span></i><br /><br />
 				<span id='albumart'></span>
 			</p>
-			<!--
-			<table>
-				<tr>
-					<td>
-						<span id='song'>Easy</span><br />
-						<span id='artist'>Hinds</span><br />
-						<span id='album'>Leave Me Alone</span>
-					</td>
-					<td>
-						<span id='albumcover'>
-							<img height=100 src='http://media.npr.org/assets/img/2015/12/30/hinds-leave-me-alone_sq-7cd14c4472610b4e2eee4b912f0f7beacca3de55-s300-c85.jpg' />
-						</span>
-					</td>
-				</tr>
-			</table>
-			-->
 			<br />
+			<!--Buttons for starting/stopping livestream-->
 			<button type=button id="livestreamlisten" class="btn" style="color: white; margin-right: 20px;">Listen Now</button>
 			<button type=button id="livestreamstop" class="btn" style="color: white;">Stop Stream</button>
 		</div>
-		<div id="streamBlock">
-		</div>
 		<hr />
-		<div id="footerBlock">
+		<!--Footer block-->
+		<div>
+			<!--Personal website, GitHub repo, and KVRX website-->
 			<p>Developed by <a href="http://ianmobbs.com/" target="_blank">Ian Mobbs</a></p>
 			<p>Source code can be found on <a href="https://github.com/ianmobbs/KVRX-Livestream" target="_blank">Github</a>.</p>
 			<p><a href="http://kvrx.org" target="_blank">KVRX Austin - 91.7 FM</a></p>
 		</div>
 	</body>
+	<!--Popup.js for logic, jQuery for song/artist/album element populating-->
 	<script src="popup.js" type="text/javascript"></script>
 	<script src="jquery-3.0.0.min.js"></script>
 <script>
