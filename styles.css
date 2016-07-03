@@ -1,14 +1,25 @@
 body {
-	/*font-family: 'Open Sans', sans-serif;*/
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto Slab', sans-serif;
 	background-color: #3c3c3c;
 	color: #E7EE22;
 	margin-left: 20px;
+	margin-right:20px;
 }
 
-table {
-	margin-right: 20px;
+.nowplaying {
+	margin-left: 20px !important;
 }
+
+table img {
+	margin-left: 20px !important;
+	text-align: right;
+}
+
+hr {
+	margin-top:0px;
+	margin-bottom:10px;
+}
+
 
 .title {
 	color: #E7EE22;
@@ -16,9 +27,17 @@ table {
 
 #footerBlock {
 	font-size: 10px;
+	color:#fff;
+	font-size:11px;
+	text-align:center;
 }
 #album-name {
-	color: yellow;
+	color: #444444;
 	pointer-events: none;
 	cursor: default;
+	font-style:italic;
+}
+#titleblock {
+	margin-top: 10px;
+	margin-bottom: 8px;
 }

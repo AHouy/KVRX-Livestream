@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>KVRX Livestream</title>
-	 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="styles.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-		<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-	</head>
-	<body style="width: 400px;">
-		<!--Main block-->
-		<div>
-
-			<!--Title section-->
-			<hr />
-			<table>
+<head>
+	<title>KVRX Livestream</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+</head>
+<body style="width: 400px;">
+	<!--Main block-->
+	<div>
+		<!--Title section-->
+		<div id="titleblock">
+			<table class="header">
 				<tr>
 					<td style="width: 30%;">
-						<img src="icon.png" height="20%">
+						<img height="20%" src="icon.png">
 					</td>
 					<td>
-						<h4 class="title">KVRX Livestream</h4>
+						<h4 class="title" style="margin-left: 10px;">KVRX Livestream</h4>
 					</td>
 				</tr>
 			</table>
-			<hr />
-
-			<!--Now playing block-->
-			<h5 class="title">NOW PLAYING</h5>
-			<table>
-				<tr>
-					<td>
-						<span id='song'></span><br />
-						<span id='artist'></span><br />
-						<i><span id='album'></span></i><br />
-					</td>
-					<td style="text-align: right;">
-						<span id='albumart'></span>
-					</td>
-				</tr>
-			</table>
-			<br />
-
-			<!--Buttons for starting/stopping livestream-->
-
-			<button type=button id="livestreamlisten" class="btn" style="color: white; margin-left: 50px">Listen Now</button>
-			<button type=button id="livestreamstop" class="btn" style="color: white; float: right; margin-right: 70px;">Stop Stream</button>
-			
 		</div>
-		<hr />
-		<!--Footer block-->
-		<div id="footerBlock">
-			<!--Personal website, GitHub repo, and KVRX website-->
-			<p>Developed by <a href="http://ianmobbs.com/" target="_blank">Ian Mobbs</a></p>
-			<p>Source code can be found on <a href="https://github.com/ianmobbs/KVRX-Livestream" target="_blank">Github</a>.</p>
-			<p><a href="http://kvrx.org" target="_blank">KVRX Austin - 91.7 FM</a></p>
-		</div>
-	</body>
+		<hr>
+		
+		<!--Now Playing block-->
+		<table class="nowplaying">
+			<tr>
+				<td>
+					<h5 class="title">NOW PLAYING</h5>
+					<span id='song'></span><br>
+					<span id='artist'></span><br>
+					<span id='album'></span><br>
+				</td>
+				<td style="text-align: right;">
+					<span id='albumart'></span>
+				</td>
+			</tr>
+		</table>
+		<br>
+		
+		<!--Buttons for starting/stopping livestream-->
+		<button class="btn" id="livestreamlisten" style="color: white; margin-left: 50px" type="button">Listen Now</button>
+		<button class="btn" id="livestreamstop" style="color: white; float: right; margin-right: 50px;" type="button">Stop Stream</button>
+	</div>
+	<br>
+	
+	<!--Footer block-->
+	<hr>
+	<div id="footerBlock">
+		<!--Personal website, GitHub repo, and KVRX website-->
+		<p>Developed by <a href="http://ianmobbs.com/" target="_blank">Ian Mobbs</a><br>
+		Source code on <a href="https://github.com/ianmobbs/KVRX-Livestream" target="_blank">Github</a><br>
+		<a href="http://kvrx.org" target="_blank">KVRX Austin - 91.7 FM</a><br></p>
+	</div>
 	<!--Popup.js for logic, jQuery for song/artist/album element populating-->
-	<script src="popup.js" type="text/javascript"></script>
+	<script src="popup.js" type="text/javascript"></script> 
 	<script src="jquery-3.0.0.min.js"></script>
+</body>
 </html>
