@@ -2,8 +2,9 @@
   "manifest_version": 2,
 
   "name": "KVRX Livestream",
+  "short_name":"KVRX",
   "description": "Listen to KVRX with the click of a button!",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "permissions": ["http://kvrx.org/"],
 
   "browser_action": {
