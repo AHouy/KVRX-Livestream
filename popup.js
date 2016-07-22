@@ -5,12 +5,6 @@ function updateTags() {
 	$("#artist").load("http://kvrx.org #artist-name:eq(0)");
 	$("#album").load("http://kvrx.org #album-name:eq(0)");
 	$("#albumart").load("http://kvrx.org #album-artwork");
-	/*
-	var strSongName = $('#song').contents().unwrap().contents().unwrap().text();
-	var strArtistName = $('#artist').contents().unwrap().contents().unwrap().text();
-	var strAlbumName = $('#album').contents().unwrap().contents().unwrap().text();
-	console.log("Info:", strSongName, strArtistName, strAlbumName);
-	*/
 }
 
 //Runs scripts once main page is loaded
@@ -25,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
    	//If play button is pressed, send to background.js via message
     playButton.addEventListener('click', function() {
-    	console.log("play button pressed");
     	chrome.extension.sendMessage({action: "play"})
     });
     
