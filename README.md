@@ -7,7 +7,9 @@ Listen to the KVRX Livestream without having to keep a tab open.
 * Change album styling
 * Add Facebook/Twitter/etc sharing
 * Live update buttons to reflect whether or not stream is playing
-* Add Last.fm scrobbling, Spotify saving
+* Add Last.fm scrobbling
+* Add Spotify saving
+* Add picture to extension description (in Chrome extensions)
 
 ###Long-term
 
@@ -23,3 +25,4 @@ Thank you to Elliott Ashton for HTML/CSS support!
 * Added changelog
 * Restructured background.js to include KVRXPlayer() class
 * Updated jQuery
+* Reduced load on KVRX site
