@@ -31,12 +31,7 @@ hr {
 	font-size:11px;
 	text-align:center;
 }
-#album-name {
-	color: #444444;
-	pointer-events: none;
-	cursor: default;
-	font-style:italic;
-}
+
 #titleblock {
 	margin-top: 10px;
 	margin-bottom: 8px;

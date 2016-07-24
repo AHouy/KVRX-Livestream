@@ -38,11 +38,6 @@ class KVRXPlayer {
 	}
 }
 
-function trackEqual(t1 ,t2) {
-	return (JSON.stringify(t1) === JSON.stringify(t2));
-}
-
-
 //Create new instance of the KVRX player
 console.log("Instantiating new player class");
 var player = new KVRXPlayer();
@@ -58,12 +53,18 @@ function scrobble() {
         currTrack['song'] = data.substring(data.indexOf('<span id="track-name">') + 22, data.indexOf('</span><span id="artist-name">'));
         currTrack['artist'] = data.substring(data.indexOf('<span id="artist-name">') + 23, data.indexOf('</span><span id="album-name">'));
     });
+
+    //Current issue - lastTrack and currTrack aren't really working??
+    //I can console.log(currTrack) but stringifying it returns {}??
+    //Setting lastTrack to currTrack only works sometimes??
+
+    /*
     console.log(currTrack, lastTrack)
     console.log(JSON.stringify(currTrack))
     console.log(JSON.stringify(lastTrack))
     console.log(JSON.stringify(currTrack) == JSON.stringify(lastTrack), JSON.stringify(currTrack) === JSON.stringify(lastTrack))
 	lastTrack = currTrack;
-	/*
+
 	//Check to make sure we're scrobbling and that there's a new track going on
 	if (KVRXPlayer.scrobbling && currTrack != lastTrack) {
 		console.log("Scrobble: ", song, " - ", artist);
