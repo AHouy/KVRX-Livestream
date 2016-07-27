@@ -1,7 +1,10 @@
 #KVRX Livestream Listener
+
 Listen to the KVRX Livestream without having to keep a tab open.
+Thank you to Elliott Ashton for HTML/CSS support!
 
 ##TODO
+
 ###Short-term
 
 * Add Facebook/Twitter/etc sharing
@@ -14,15 +17,17 @@ Listen to the KVRX Livestream without having to keep a tab open.
 
 * Add link to current playlist and DJ
 * Add logging
-
-Thank you to Elliott Ashton for HTML/CSS support!
-
+* KVRX website redesign incoming - going to break extension labels/scrobbling/spotify saving probably
+* Restructure into folders
 
 ##Changelog
+
 ####0.0.4
+
 * Added changelog
-* Restructured background.js to include KVRXPlayer() class
+* Cleaned up album text hyperlinks
+* Added Scrobbling infrastucture
+  * Currently logs unique track plays and time listened in background.js, but doesn't send to last.fm
+* Restructured popup.js to reduce load on KVRX.org by only querying once per popup
+* Restructured background.js to include KVRXPlayer() and Track() classes
 * Updated jQuery
-* Reduced load on KVRX site
-* Removed album hyperlinks
-* Switching to using develop/master branches lol

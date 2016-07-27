@@ -9,17 +9,19 @@ function strip(html) {
 
 //Updates song, artist, album, and album art tags from KVRX website
 function updateTags() {    
-    var page = $.get("http://kvrx.org/", function(data) {
-            var song = data.substring(data.indexOf('<span id="track-name">') + 22, data.indexOf('</span><span id="artist-name">')),
-                artist = data.substring(data.indexOf('<span id="artist-name">') + 23, data.indexOf('</span><span id="album-name">')),
-                album = strip(data.substring(data.indexOf('<span id="album-name">') + 22, data.indexOf('</span><span id="album-id">'))),
-                endString = 'alt="' + album + '" title="' + album + '" />',
-                albumart = data.substring(data.indexOf('<div id="album-artwork">') + 24, data.indexOf(endString) + endString.length);
-            document.getElementById('song').innerText = song;
-            document.getElementById('artist').innerText = artist;
-            document.getElementById('album').innerText = album;
-            document.getElementById('albumart').innerHTML = albumart;
-        });    
+    var homepage = $.get("http://kvrx.org/", function(data) {
+        document.getElementById('song').innerText = $(data).find("[id=track-name]")[0].innerText;
+        document.getElementById('artist').innerText = $(data).find("[id=artist-name]")[0].innerText;
+        document.getElementById('album').innerText = $(data).find("[id=album-name]")[0].innerText;
+        document.getElementById('albumart').innerHTML = $(data).find("[id=album-artwork]")[0].innerHTML;
+        }); 
+    var currDay = new Date().getDay(),
+        currHours = new Date().getHours();
+        if (((currDay >= 1 && currDay <= 5) && (currHours >= 19 || currHours <= 9)) || (currDay == 0 || currDay == 6) && (currHours >= 22 && currHours <= 9)) { //Monday through Friday, 7pm to 9am, Saturday/Sunday, 10pm to 9am
+            var schedule = $.get("http://kvrx.org/schedule", function(data) {
+                
+            });
+        }
 }
 
 //Runs scripts once main page is loaded
