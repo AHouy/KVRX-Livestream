@@ -17,11 +17,11 @@ function updateTags() {
         }); 
     var album_info = $.getJSON("http://kvrx.org/now_playing/album_info"), function(data) {
         document.getElementById('albumart').innerHTML = data.album_artwork;
-                    //see if we need to add any links
-                    if (data.album_href != '') {
-                        var link = '<a href="' + data.album_href + '">' + $("div#now-playing span#album-name").text() + '</a>';
-                        $("div#now-playing span#album-name").html(link);
-                        $("div#now-playing-badge div#album-name").html(link);
+        //see if we need to add any links
+        if (data.album_href != '') {
+		var link = '<a href="' + data.album_href + '">' + $("#albumart").text() + '</a>';
+        	$("#album").html(link);
+	}
     });
 }
 
