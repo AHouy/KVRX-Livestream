@@ -40,3 +40,55 @@ hr {
 #playlist {
 	text-align: center;
 }
+
+.btn {
+	font-weight:bold;
+}
+
+#livestreamlisten {
+	color: black; margin-left: 50px;
+}
+
+#livestreamstop {
+	color: black; float: right; margin-right: 50px;
+}
+
+.share-links {
+    background: transparent;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 12px;
+    background-size: 18px !important;
+    background-repeat: no-repeat !important;
+    background-position: 90% 50% !important;
+    border-width: 3px;
+    border-style: solid;
+    width: 85px;
+    text-align: left;
+}
+
+#facebook-share {
+    background-image: url(sites/all/modules/tsm_kvrx_now_playing/images/flogo_RGB_HEX-72.svg);
+    color: #4267b2;
+	border-color: #4267b2;
+	margin-left: 50px;
+}
+#facebook-share:hover {
+    background-image: url(sites/all/modules/tsm_kvrx_now_playing/images/flogo-HexRBG-Wht-58.svg);
+    background-color: #4267b2;
+    color:white;
+}
+#twitter-share {
+    background-size: 30px !important;
+    background-image: url(sites/all/modules/tsm_kvrx_now_playing/images/Twitter_Logo_Blue.svg);
+    color: #1da1f2;
+    border-color: #1da1f2;
+	background-position: 103% 50% !important;
+	float: right; margin-right: 50px;
+}
+#twitter-share:hover {
+    background-image: url(sites/all/modules/tsm_kvrx_now_playing/images/Twitter_Logo_WhiteOnBlue.svg);
+    background-color: #1da1f2;
+    color:white;
+}

@@ -34,6 +34,7 @@
 					<span id='song'></span><br>
 					<span id='artist'></span><br>
 					<span id='album'></span><br>
+					<span id='show'></span><br>
 				</td>
 				<td style="text-align: right;">
 					<span id='albumart'></span>
@@ -43,8 +44,12 @@
 		<br>
 		
 		<!--Buttons for starting/stopping livestream-->
-		<button class="btn" id="livestreamlisten" style="color: white; margin-left: 50px" type="button">Listen Now</button>
-		<button class="btn" id="livestreamstop" style="color: white; float: right; margin-right: 50px;" type="button">Stop Stream</button>
+		<button class="btn" id="livestreamlisten" type="button">Listen Now</button>
+		<button class="btn" id="livestreamstop" type="button">Stop Stream</button>
+
+		<!-- Buttons for Sharing Livestream -->
+		<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.kvrx.org/player" role="button" class="btn btn-default share-links" id="facebook-share" target="_blank">Share</a>
+		<a href="https://twitter.com/home?status=I am currently listening to %20http%3A//kvrx.org/blog/Local%2520Live/local-live-lowdown-chief-perch/" role="button" class="btn btn-default share-links" id="twitter-share" target="_blank">Tweet</a>
 	</div>
 	<br>
 	<div id='playlist'></div>
@@ -53,6 +58,7 @@
 	<div id="footerBlock">
 		<!--Personal website, GitHub repo, and KVRX website-->
 		<p>Developed by <a href="http://ianmobbs.com/" target="_blank">Ian Mobbs</a><br>
+		<p>Developed by Alexander Houy</a><br>
 		Source code on <a href="https://github.com/ianmobbs/KVRX-Livestream" target="_blank">Github</a><br>
 		<a href="http://kvrx.org" target="_blank">KVRX Austin - 91.7 FM</a><br></p>
 	</div>

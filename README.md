@@ -1,15 +1,15 @@
-#KVRX Livestream Listener
+# KVRX Livestream Listener
 
 Listen to the KVRX Livestream without having to keep a tab open.
 Thank you to Elliott Ashton for HTML/CSS support!
 
-##About
+## About
 
 This was really my first foray into learning how to make a Chrome extension. All the code is just simple HTML, CSS, and JavaScript, but it was my first time using jQuery and my first time having to structure things in the way Google wanted. The biggest challenge I faced was after I created the extension, I learned Chrome extensions don't allow inline JavaScript - so I had to add event listeners to my `popup.js` file which communicated with my `popup.js` file to create a backgrounded audio element.
 
-##TODO
+## TODO
 
-###Short-term
+### Short-term
 
 * Add Facebook/Twitter/etc sharing
 * Live update buttons to reflect whether or not stream is playing
@@ -17,7 +17,7 @@ This was really my first foray into learning how to make a Chrome extension. All
 * Add Spotify saving
 * Add picture to extension description (in Chrome extensions)
 
-###Long-term
+### Long-term
 
 * Add link to current playlist and DJ
 * Add logging
