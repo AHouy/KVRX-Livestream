@@ -1,13 +1,23 @@
 body {
 	font-family: 'Roboto Slab', sans-serif;
-	background-color: #3c3c3c;
-	color: #E7EE22;
-	margin-left: 20px;
-	margin-right:20px;
+	background-color: #121212;
+	color: #dadbdf;
+	font-size:16px;
+	margin:0 auto;
+	border:2px solid red;
+}
+.main {
+	margin-bottom:19px;
+	width:92%
 }
 
 .nowplaying {
-	margin-left: 20px !important;
+	width:100%;
+	position: relative;
+}
+
+.nowplaying td {
+	padding-left: 10px;
 }
 
 table img {
@@ -20,21 +30,48 @@ hr {
 	margin-bottom:10px;
 }
 
-
-.title {
-	color: #E7EE22;
+.yellow-heading {
+	background-color:#ffe400;
+	color: #121212;
+	font-size:20px;
+	/* height:28px; */
 }
 
-#footerBlock {
-	font-size: 10px;
-	color:#fff;
-	font-size:11px;
-	text-align:center;
+.yellow-heading b {
+	margin-left: 10px;
+}
+
+.header td {
+	vertical-align: bottom;
+}
+
+.title {
+	color: #ffe400;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#albumart img {
+	/* border: white solid 3px; */
+	/* margin-top:; */
+	position:absolute;
+	top:8px;
+	right:0;
+	width: 125px;
+    box-shadow: 0 0 6px #000;
+}
+
+#album {
+	font-style:italic;
 }
 
 #titleblock {
 	margin-top: 10px;
 	margin-bottom: 8px;
+}
+
+#titleblock table {
+	margin-bottom:10px;
 }
 
 #playlist {
@@ -45,12 +82,34 @@ hr {
 	font-weight:bold;
 }
 
+#show a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+#show a:hover {
+	color: #ffe400;
+}
+
+
 #livestreamlisten {
-	color: black; margin-left: 50px;
+	background-color:#ffe400;
+	float:right;
 }
 
 #livestreamstop {
-	color: black; float: right; margin-right: 50px;
+	background-color: #dadbdf;
+	float: right; 
+	/* margin-right: 50px; */
+}
+
+.btn {
+	color: black;
+	/* width:110px; */
+}
+
+.btn:hover {
+	background-color:white !important;
 }
 
 .share-links {

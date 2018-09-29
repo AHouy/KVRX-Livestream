@@ -15,12 +15,11 @@ This was really my first foray into learning how to make a Chrome extension. All
 * Live update buttons to reflect whether or not stream is playing
 * Add Last.fm scrobbling
 * Add Spotify saving
-* Add picture to extension description (in Chrome extensions)
 
 ### Long-term
 
 * Add link to current playlist and DJ
 * Add logging
-* KVRX website redesign incoming - going to break extension labels/scrobbling/spotify saving probably
+* ~KVRX website redesign incoming - going to break extension labels/scrobbling/spotify saving probably~
 * Restructure into folders
 

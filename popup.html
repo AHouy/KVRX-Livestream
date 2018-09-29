@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>KVRX Livestream</title>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -8,62 +9,59 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 </head>
+
 <body style="width: 400px;">
 	<!--Main block-->
-	<div>
+	<div class="main">
 		<!--Title section-->
 		<div id="titleblock">
 			<table class="header">
 				<tr>
 					<td style="width: 30%;">
-						<img height="20%" src="icon.png">
+						<a href="http://kvrx.org">
+							<img height="20%" src="logo-yellow.png">
+						</a>
 					</td>
 					<td>
-						<h4 class="title" style="margin-left: 10px;">KVRX Livestream</h4>
+						<h4 class="title" style="margin-left: 10px;">LIVESTREAM</h4>
 					</td>
 				</tr>
 			</table>
+			<div class="yellow-heading">
+				<b>NOW PLAYING:</b>
+			</div>
 		</div>
-		<hr>
-		
+
 		<!--Now Playing block-->
 		<table class="nowplaying">
 			<tr>
 				<td>
-					<h5 class="title">NOW PLAYING</h5>
-					<span id='song'></span><br>
-					<span id='artist'></span><br>
-					<span id='album'></span><br>
-					<span id='show'></span><br>
-				</td>
-				<td style="text-align: right;">
-					<span id='albumart'></span>
+					<span id='song'>None of the Hits,</span>
+					<br>
+					<span id='album'>All of the Time</span>
+					<br>
+					<span id='artist'>91.7 FM</span>
+					<br>
+					<span id='show'>
+						<a href="http://kvrx.org">KVRX</a>
+					</span>
+					<br>
+					<!-- <span id='albumart'><img src='sites/all/modules/tsm_kvrx_now_playing/images/default_album_art.png'></img></span> -->
 				</td>
 			</tr>
 		</table>
 		<br>
-		
 		<!--Buttons for starting/stopping livestream-->
-		<button class="btn" id="livestreamlisten" type="button">Listen Now</button>
-		<button class="btn" id="livestreamstop" type="button">Stop Stream</button>
-
+		<button class="btn" id="livestreamlisten" type="button">Start Stream</button>
+		<button class="btn" id="livestreamstop" type="button" style="display:none">Stop Stream</button>
+		<div style="clear:both;"></div>
 		<!-- Buttons for Sharing Livestream -->
-		<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.kvrx.org/player" role="button" class="btn btn-default share-links" id="facebook-share" target="_blank">Share</a>
-		<a href="https://twitter.com/home?status=I am currently listening to %20http%3A//kvrx.org/blog/Local%2520Live/local-live-lowdown-chief-perch/" role="button" class="btn btn-default share-links" id="twitter-share" target="_blank">Tweet</a>
-	</div>
-	<br>
-	<div id='playlist'></div>
-	<!--Footer block-->
-	<hr>
-	<div id="footerBlock">
-		<!--Personal website, GitHub repo, and KVRX website-->
-		<p>Developed by <a href="http://ianmobbs.com/" target="_blank">Ian Mobbs</a><br>
-		<p>Developed by Alexander Houy</a><br>
-		Source code on <a href="https://github.com/ianmobbs/KVRX-Livestream" target="_blank">Github</a><br>
-		<a href="http://kvrx.org" target="_blank">KVRX Austin - 91.7 FM</a><br></p>
+		<!-- <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.kvrx.org/player" role="button" class="btn btn-default share-links" id="facebook-share" target="_blank">Share</a> -->
+		<!-- <a href="https://twitter.com/home?status=@KVRX" role="button" class="btn btn-default share-links" id="twitter-share" target="_blank">Tweet</a> -->
 	</div>
 	<!--Popup.js for logic, jQuery for song/artist/album element populating-->
-	<script src="popup.js" type="text/javascript"></script> 
+	<script src="popup.js" type="text/javascript"></script>
 	<script src="jquery.js"></script>
 </body>
+
 </html>
