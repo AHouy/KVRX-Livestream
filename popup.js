@@ -24,7 +24,7 @@ var getJSON = function (url, callback) {
 
 //Updates song, artist, album, and album art tags from KVRX website
 function updateTags() {
-    var homepage = getJSON("https://kvrx.org/now_playing/track", function (err, data) {
+    var homepage = getJSON("https://kvrx.org/now_playing/track/", function (err, data) {
         document.getElementById('song').innerText = data.track;
         document.getElementById('artist').innerText = data.artist;
         document.getElementById('album').innerText = data.album;
