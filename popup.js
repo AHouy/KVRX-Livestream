@@ -29,7 +29,7 @@ function updateTags() {
         document.getElementById('artist').innerText = data.artist;
         document.getElementById('album').innerText = data.album;
         if (data.show != 'Automation')
-            document.getElementById('show').innerHTML = "<a href='http://www.kvrx.org/show/" + slugify(data.show) + "'>" + data.show + "</a>";
+            document.getElementById('show').innerHTML = "<a href='http://www.kvrx.org/show/" + slugify(data.show) + "' target='_blank'>" + data.show + "</a>";
         else
             document.getElementById('show').innerHTML = "";
     });
