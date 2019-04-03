@@ -10,23 +10,11 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 </head>
 
-<body style="width: 400px;">
+<body style="width:400px; margin: 0 5px">
 	<!--Main block-->
-	<div class="main">
+	<div class="main" style="width: 65%; float: right;">
 		<!--Title section-->
 		<div id="titleblock">
-			<table class="header">
-				<tr>
-					<td style="width: 30%;">
-						<a href="http://kvrx.org">
-							<img height="20%" src="logo-yellow.png">
-						</a>
-					</td>
-					<td>
-						<h4 class="title" style="margin-left: 10px;">LIVESTREAM</h4>
-					</td>
-				</tr>
-			</table>
 			<div class="yellow-heading">
 				<b>NOW PLAYING:</b>
 			</div>
@@ -43,10 +31,9 @@
 					<span id='artist'>91.7 FM</span>
 					<br>
 					<span id='show'>
-						<a href="http://kvrx.org">KVRX</a>
+						<a href="http://kvrx.org" target="_blank">KVRX</a>
 					</span>
 					<br>
-					<!-- <span id='albumart'><img src='sites/all/modules/tsm_kvrx_now_playing/images/default_album_art.png'></img></span> -->
 				</td>
 			</tr>
 		</table>
@@ -54,11 +41,16 @@
 		<!--Buttons for starting/stopping livestream-->
 		<button class="btn" id="livestreamlisten" type="button">Start Stream</button>
 		<button class="btn" id="livestreamstop" type="button" style="display:none">Stop Stream</button>
-		<div style="clear:both;"></div>
-		<!-- Buttons for Sharing Livestream -->
-		<!-- <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.kvrx.org/player" role="button" class="btn btn-default share-links" id="facebook-share" target="_blank">Share</a> -->
-		<!-- <a href="https://twitter.com/home?status=@KVRX" role="button" class="btn btn-default share-links" id="twitter-share" target="_blank">Tweet</a> -->
 	</div>
+
+	<!--Logo block-->
+	<div class="logo" style="width: 35%; position:absolute; top:50%; margin-top:-80px">
+		<a href="http://kvrx.org" target="_blank">
+			<img height="20%" width="100%" src="sites/all/themes/kvrx/images/tsm-logo.png">
+		</a>
+	</div>
+
+	<div class="clearfix"></div>
 	<!--Popup.js for logic, jQuery for song/artist/album element populating-->
 	<script src="popup.js" type="text/javascript"></script>
 	<script src="jquery.js"></script>

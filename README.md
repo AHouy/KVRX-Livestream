@@ -1,7 +1,6 @@
 # KVRX Livestream Listener
 
 Listen to the KVRX Livestream without having to keep a tab open.
-Thank you to Elliott Ashton for HTML/CSS support!
 
 ## About
 
